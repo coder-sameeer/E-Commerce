@@ -37,7 +37,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
-          <ShoppingCart />
+          <ShoppingCartModal />
           <Toaster
             position="top-right"
             toastOptions={{
