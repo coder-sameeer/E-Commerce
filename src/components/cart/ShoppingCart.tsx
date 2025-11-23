@@ -22,7 +22,7 @@ export default function ShoppingCart() {
     return (
       <Modal isOpen={isOpen} onClose={closeCart} size="sm">
         <div className="text-center py-8">
-          <ShoppingCart className="h-16 w-16 text-gray-400 mx-auto mb-4" />
+          <ShoppingCartIcon className="h-16 w-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-lg font-medium text-gray-900 mb-2">Your cart is empty</h3>
           <p className="text-gray-500 mb-4">Looks like you haven't added any items yet.</p>
           <Button onClick={closeCart}>Continue Shopping</Button>
