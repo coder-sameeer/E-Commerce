@@ -98,7 +98,8 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const product = mockProducts.find(p => p.id === params.id);
+    const { id } = await params;
+    const product = mockProducts.find(p => p.id === id);
 
     if (!product) {
       return NextResponse.json(
