@@ -4,7 +4,7 @@ import { useCartStore } from '@/store';
 import { formatPrice } from '@/lib/utils';
 import Button from '@/components/ui/Button';
 import Modal from '@/components/ui/Modal';
-import { X, Minus, Plus, ShoppingCart } from 'lucide-react';
+import { X, Minus, Plus, ShoppingCart as ShoppingCartIcon } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ShoppingCart() {
