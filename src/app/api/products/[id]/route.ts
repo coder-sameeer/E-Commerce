@@ -95,7 +95,7 @@ const mockProducts: Product[] = [
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const product = mockProducts.find(p => p.id === params.id);
