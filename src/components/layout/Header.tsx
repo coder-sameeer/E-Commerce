@@ -9,7 +9,7 @@ import Button from '@/components/ui/Button';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { openCart, itemCount, getTotal } = useCartStore();
+  const { openCart, getItemCount } = useCartStore();
   const { user, isAuthenticated } = useUserStore();
 
   const navigation = [
