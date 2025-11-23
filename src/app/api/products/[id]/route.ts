@@ -126,8 +126,9 @@ export async function PUT(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const body = await request.json();
-    const productIndex = mockProducts.findIndex(p => p.id === params.id);
+    const productIndex = mockProducts.findIndex(p => p.id === id);
 
     if (productIndex === -1) {
       return NextResponse.json(
