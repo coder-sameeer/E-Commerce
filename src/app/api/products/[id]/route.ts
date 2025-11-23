@@ -164,7 +164,8 @@ export async function DELETE(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const productIndex = mockProducts.findIndex(p => p.id === params.id);
+    const { id } = await params;
+    const productIndex = mockProducts.findIndex(p => p.id === id);
 
     if (productIndex === -1) {
       return NextResponse.json(
